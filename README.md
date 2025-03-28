@@ -1,105 +1,104 @@
-# TaskMaster - Gerenciador de Tarefas Minimalista
+# 🖤 TaskMaster - Gerenciador de Tarefas Minimalista
 
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Interface TaskMaster">
+  <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Interface TaskMaster" width="400">
 </div>
 
-## ✨ Funcionalidades
+## ✨ Funcionalidades Principais
 
-'''
 - ✅ **CRUD Completo** (Create, Read, Update, Delete)
 - 📝 Adicionar novas tarefas
 - 👀 Visualizar lista de tarefas
 - ✏️ Editar tarefas existentes
 - 🗑️ Excluir tarefas
 - 🛡️ Validação de tarefas duplicadas
-'''
 
 ## 🛠️ Tecnologias Utilizadas
 
-'''
-# Backend
-Flask (Python)       # Framework web
-SQLAlchemy           # ORM para banco de dados
-SQLite               # Banco de dados embutido
+**Backend:**
+- Python 3
+- Flask
+- SQLAlchemy
+- SQLite
 
-# Frontend
-HTML5 + CSS puro     # Interface minimalista
-'''
+**Frontend:**
+- HTML5 semântico
+- CSS3 moderno
+- Design responsivo
 
-## 🚀 Como Executar
+## 🚀 Instalação e Execução
 
 '''bash
-# 1. Clone o repositório
-git clone [seu-repositorio]
-cd [pasta-do-projeto]
+# Clone o repositório
+git clone https://github.com/seu-usuario/taskmaster.git
+cd taskmaster
 
-# 2. Instale as dependências
-pip install flask flask-sqlalchemy
+# Crie e ative o ambiente virtual (recomendado)
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# venv\Scripts\activate   # Windows
 
-# 3. Execute a aplicação
+# Instale as dependências
+pip install -r requirements.txt
+
+# Execute a aplicação
 python app.py
+'''
 
-# 4. Acesse no navegador
+## 🔌 Acessando a Aplicação
+
+'''bash
+# Após executar o servidor Flask, acesse:
 http://localhost:5153
 '''
 
-## 💻 Trechos de Código
-
-'''python
-# Estrutura do modelo de dados
-class Tasks(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    description = db.Column(db.String(100), unique=True, nullable=False)
-
-# Rota principal
-@app.route('/')
-def index():
-    tasks = Tasks.query.all()
-    return render_template('index.html', tasks=tasks)
-'''
-
-'''html
-<!-- Formulário de adição -->
-<form action="/create" method="POST">
-  <input type="text" name="description" placeholder="Digite sua tarefa...">
-  <button type="submit">Adicionar</button>  
-</form>
-'''
-
-## 🎨 Design
-
-'''css
-/* Estilo minimalista */
-body {
-  background: white;
-  color: black;
-  font-family: sans-serif;
-}
-
-button {
-  background: black;
-  color: white;
-  border: 2px solid black;
-}
-'''
-
-## 📌 Objetivo
-
-'''
-Aplicação criada para demonstrar:
-- Operações CRUD básicas
-- Integração Flask + SQLite
-- Design minimalista funcional
-- Boas práticas de desenvolvimento web
-'''
-
-## 📂 Estrutura de Arquivos
+## 📂 Estrutura do Projeto
 
 '''bash
 taskmaster/
-├── app.py          # Lógica principal
-├── templates/
-│   └── index.html  # Única página
-└── site.db         # Banco de dados
+├── app.py               # Aplicação principal
+├── requirements.txt     # Dependências
+├── site.db              # Banco de dados SQLite
+└── templates/
+    └── index.html       # Interface do usuário
 '''
+
+## 💡 Exemplos de Código
+
+**Modelo de Dados:**
+'''python
+class Tasks(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    description = db.Column(db.String(100), unique=True, nullable=False)
+'''
+
+**Rota para Adicionar Tarefa:**
+'''python
+@app.route('/create', methods=["POST"])
+def create_task():
+    description = request.form['description']
+    new_task = Tasks(description=description)
+    db.session.add(new_task)
+    db.session.commit()
+    return redirect('/')
+'''
+
+## 📌 Pré-requisitos
+
+'''bash
+# Versão mínima do Python
+python --version  # Python 3.8+
+'''
+
+## 🤝 Como Contribuir
+
+'''bash
+# 1. Faça um fork do projeto
+# 2. Crie sua branch (git checkout -b feature/AmazingFeature)
+# 3. Commit suas mudanças (git commit -m 'Add some AmazingFeature')
+# 4. Push para a branch (git push origin feature/AmazingFeature)
+# 5. Abra um Pull Request
+'''
+
+## 📄 Licença
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
