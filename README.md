@@ -1,104 +1,47 @@
 # 🖤 TaskMaster - Gerenciador de Tarefas Minimalista
 
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Interface TaskMaster" width="400">
+  <img src="images/Captura%20de%20Tela%202025-03-28%20às%2019.00.48.png" alt="Interface do TaskMaster mostrando tarefas" width="80%">
+  <p><em>Interface limpa e funcional do gerenciador de tarefas</em></p>
 </div>
 
-## ✨ Funcionalidades Principais
+## 🧩 Funcionalidades Implementadas
 
-- ✅ **CRUD Completo** (Create, Read, Update, Delete)
-- 📝 Adicionar novas tarefas
-- 👀 Visualizar lista de tarefas
-- ✏️ Editar tarefas existentes
-- 🗑️ Excluir tarefas
-- 🛡️ Validação de tarefas duplicadas
+### 🔄 Sistema CRUD Completo
+- **Create**: Adição de novas tarefas com validação de duplicados
+- **Read**: Listagem organizada em tempo real
+- **Update**: Edição direta na interface
+- **Delete**: Remoção com confirmação implícita
 
-## 🛠️ Tecnologias Utilizadas
+<div align="center">
+  <img src="images/Captura%20de%20Tela%202025-03-28%20às%2019.00.30.png" alt="Estado inicial vazio" width="60%">
+  <p><em>Estado inicial convidando à criação da primeira tarefa</em></p>
+</div>
+
+## 🛠️ Arquitetura Técnica
 
 **Backend:**
-- Python 3
-- Flask
-- SQLAlchemy
-- SQLite
+- Python + Flask
+- SQLAlchemy (ORM)
+- SQLite (Banco de dados)
 
 **Frontend:**
+- Single Page Application
 - HTML5 semântico
-- CSS3 moderno
-- Design responsivo
+- CSS moderno (Flexbox/Grid)
 
-## 🚀 Instalação e Execução
+## 🎯 Objetivos
 
-'''bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/taskmaster.git
-cd taskmaster
+1. Demonstrar CRUD completo
+2. Integração eficiente Flask-SQLite
+3. Padrões web modernos
+4. UX minimalista e funcional
 
-# Crie e ative o ambiente virtual (recomendado)
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# venv\Scripts\activate   # Windows
+## 🌟 Destaques
 
-# Instale as dependências
-pip install -r requirements.txt
-
-# Execute a aplicação
-python app.py
-'''
-
-## 🔌 Acessando a Aplicação
-
-'''bash
-# Após executar o servidor Flask, acesse:
-http://localhost:5153
-'''
+✔️ Validação no backend  
+✔️ Persistência local eficaz  
+✔️ Design responsivo  
+✔️ Fácil expansão  
 
 ## 📂 Estrutura do Projeto
-
-'''bash
-taskmaster/
-├── app.py               # Aplicação principal
-├── requirements.txt     # Dependências
-├── site.db              # Banco de dados SQLite
-└── templates/
-    └── index.html       # Interface do usuário
-'''
-
-## 💡 Exemplos de Código
-
-**Modelo de Dados:**
-'''python
-class Tasks(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    description = db.Column(db.String(100), unique=True, nullable=False)
-'''
-
-**Rota para Adicionar Tarefa:**
-'''python
-@app.route('/create', methods=["POST"])
-def create_task():
-    description = request.form['description']
-    new_task = Tasks(description=description)
-    db.session.add(new_task)
-    db.session.commit()
-    return redirect('/')
-'''
-
-## 📌 Pré-requisitos
-
-'''bash
-# Versão mínima do Python
-python --version  # Python 3.8+
-'''
-
-## 🤝 Como Contribuir
-
-'''bash
-# 1. Faça um fork do projeto
-# 2. Crie sua branch (git checkout -b feature/AmazingFeature)
-# 3. Commit suas mudanças (git commit -m 'Add some AmazingFeature')
-# 4. Push para a branch (git push origin feature/AmazingFeature)
-# 5. Abra um Pull Request
-'''
-
-## 📄 Licença
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
