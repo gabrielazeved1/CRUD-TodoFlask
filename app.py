@@ -1,3 +1,21 @@
+"""
+autor: Gabriel Azevedo Santos - UFU
+
+Aplicação Flask para gerenciamento de tarefas (CRUD) com:
+- Flask: Framework web Python
+- SQLAlchemy: ORM para banco de dados
+- SQLite: Banco de dados embutido
+Funcionalidades implementadas:
+1. CREATE: Adicionar novas tarefas (com validação de duplicados)
+2. READ: Listar todas as tarefas cadastradas
+3. UPDATE: Editar tarefas existentes
+4. DELETE: Remover tarefas permanentemente
+Estrutura:
+- Rotas Flask para cada operação CRUD
+- Modelo Tasks para persistência no banco
+- Configuração básica do SQLAlchemy
+"""
+
 from flask import Flask, render_template,request, redirect
 from flask_sqlalchemy import SQLAlchemy
 

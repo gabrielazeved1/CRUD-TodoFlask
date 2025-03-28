@@ -1,41 +1,61 @@
-# 🖤 TaskMaster - Gerenciador de Tarefas Minimalista
-
-## 📸 Demonstração
+# TaskMaster - Gerenciador de Tarefas Minimalista
 
 <div align="center">
-  <img src="images/Com%20tarefas.png" alt="Tarefas Pendentes" width="400"/>
-  <p><em>Interface com tarefas ativas</em></p>
+  <img src="images/Com%20tarefas.png" alt="Tarefas ativas" width="400"/>
+  <p>Interface com persistência de dados</p>
   
-  <img src="images/Sem%20tarefas.png" alt="Sem Tarefas" width="400"/>
-  <p><em>Estado inicial da aplicação</em></p>
+  <img src="images/Sem%20tarefas.png" alt="Estado inicial" width="400"/>
+  <p>Estado inicial do aplicativo</p>
 </div>
 
-## 🧩 Funcionalidades
+## Funcionalidades Principais
 
-### 🔄 CRUD Completo
-- **Criar**: Adição com validação de duplicados
-- **Ler**: Listagem em tempo real
-- **Atualizar**: Edição direta
-- **Remover**: Exclusão com confirmação
+### CRUD Completo com Persistência
+- **Criação**: Adicionar novas tarefas com validação
+- **Leitura**: Listar todas as tarefas cadastradas
+- **Atualização**: Modificar tarefas existentes
+- **Exclusão**: Remover tarefas permanentemente
+- **Persistência**: Dados salvos automaticamente em SQLite
 
-## 🛠️ Tecnologias
+## Stack Tecnológica
 
 **Backend**:
-- Python (Flask)
-- SQLAlchemy + SQLite
+- Python + Flask (Microframework web)
+- SQLAlchemy (ORM profissional)
+- SQLite (Banco de dados embutido)
 
 **Frontend**:
-- SPA com HTML5 semântico
-- CSS Flexbox/Grid
+- HTML5 semântico
 
-## ✅ Destaques
-- Validação no backend
-- Persistência eficiente
-- Design responsivo
-- Arquitetura escalável
+**Ferramentas**:
+- Poetry (Gerenciamento de dependências)
+- Pyenv (Controle de versão Python)
 
-## 🎯 Objetivos
-1. Demonstrar CRUD completo
-2. Integração Flask-SQLite
-3. Padrões web modernos
-4. UX minimalista
+## Estrutura do Projeto
+      fullstack-flask-todo/
+         app.py # Aplicação Flask principal
+         pyproject.toml # Configuração do Poetry
+         README.md # Documentação
+      templates/
+         index.html # Arquivo HTML
+      instance/
+         site.db # Banco de dados SQLite
+      images/
+         fotos
+
+##  Tecnologias
+- **Backend**: Python com Flask (servidor web leve)
+- **Banco de Dados**: SQLite + SQLAlchemy (ORM profissional)
+- **Frontend**: HTML/CSS puro (sem frameworks)
+- **Gerenciamento**: Poetry (dependências) e Pyenv (Python)
+
+
+## Vantagens
+✔ Armazenamento local confiável  
+✔ Interface limpa e intuitiva  
+✔ Fácil personalização  
+✔ Configuração mínima necessária  
+
+
+
+    
