@@ -51,10 +51,10 @@
 
 
 ## Vantagens
-✔ Armazenamento local confiável  
-✔ Interface limpa e intuitiva  
-✔ Fácil personalização  
-✔ Configuração mínima necessária  
+   Armazenamento local confiável  
+   Interface limpa e intuitiva  
+   Fácil personalização  
+   Configuração mínima necessária  
 
 
 
