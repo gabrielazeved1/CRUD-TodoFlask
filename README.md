@@ -1,8 +1,11 @@
 # 🖤 TaskMaster - Gerenciador de Tarefas Minimalista
-![Tarefas Pendentes](images/Com%20tarefas.jpg)  
+### Com Tarefas
+![Tarefas Pendentes](images/Com%20tarefas.png)  
+*Interface com lista de tarefas ativas*
 
-## 🧩 Funcionalidades Implementadas
-
+### Sem Tarefas
+![Tarefas Concluídas](images/Sem%20tarefas.png)  
+*Estado inicial convidando à criação da primeira tarefa*
 ### 🔄 Sistema CRUD Completo
 - **Create**: Adição de novas tarefas com validação de duplicados
 - **Read**: Listagem organizada em tempo real
