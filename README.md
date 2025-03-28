@@ -1,6 +1,5 @@
 # 🖤 TaskMaster - Gerenciador de Tarefas Minimalista
-
-<img src="images/Com%20tarefas.jpg" alt="Tarefas Pendentes" width="400"/>
+![Tarefas Pendentes](images/Com%20tarefas.jpg)  
 
 ## 🧩 Funcionalidades Implementadas
 
@@ -10,7 +9,8 @@
 - **Update**: Edição direta na interface
 - **Delete**: Remoção com confirmação implícita
 
-<img src="images/Sem%20tarefas.jpg" alt="Tarefas Pendentes" width="400"/>
+### Sem Tarefas Pendentes
+![Tarefas Concluídas](images/Sem%20tarefas.jpg)
   <p><em>Estado inicial da aplicação</em></p>
 </div>
   <p><em>Estado inicial convidando à criação da primeira tarefa</em></p>
