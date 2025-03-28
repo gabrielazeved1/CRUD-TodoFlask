@@ -1,48 +1,41 @@
 # 🖤 TaskMaster - Gerenciador de Tarefas Minimalista
-### Com Tarefas
-![Tarefas Pendentes](images/Com%20tarefas.png)  
-*Interface com lista de tarefas ativas*
 
-### Sem Tarefas
-![Tarefas Concluídas](images/Sem%20tarefas.png)  
-*Estado inicial convidando à criação da primeira tarefa*
-### 🔄 Sistema CRUD Completo
-- **Create**: Adição de novas tarefas com validação de duplicados
-- **Read**: Listagem organizada em tempo real
-- **Update**: Edição direta na interface
-- **Delete**: Remoção com confirmação implícita
+## 📸 Demonstração
 
-### Sem Tarefas Pendentes
-![Tarefas Concluídas](images/Sem%20tarefas.jpg)
+<div align="center">
+  <img src="images/Com%20tarefas.png" alt="Tarefas Pendentes" width="400"/>
+  <p><em>Interface com tarefas ativas</em></p>
+  
+  <img src="images/Sem%20tarefas.png" alt="Sem Tarefas" width="400"/>
   <p><em>Estado inicial da aplicação</em></p>
 </div>
-  <p><em>Estado inicial convidando à criação da primeira tarefa</em></p>
-</div>
 
-## 🛠️ Arquitetura Técnica
+## 🧩 Funcionalidades
 
-**Backend:**
-- Python + Flask
-- SQLAlchemy (ORM)
-- SQLite (Banco de dados)
+### 🔄 CRUD Completo
+- **Criar**: Adição com validação de duplicados
+- **Ler**: Listagem em tempo real
+- **Atualizar**: Edição direta
+- **Remover**: Exclusão com confirmação
 
-**Frontend:**
-- Single Page Application
-- HTML5 semântico
-- CSS moderno (Flexbox/Grid)
+## 🛠️ Tecnologias
+
+**Backend**:
+- Python (Flask)
+- SQLAlchemy + SQLite
+
+**Frontend**:
+- SPA com HTML5 semântico
+- CSS Flexbox/Grid
+
+## ✅ Destaques
+- Validação no backend
+- Persistência eficiente
+- Design responsivo
+- Arquitetura escalável
 
 ## 🎯 Objetivos
-
 1. Demonstrar CRUD completo
-2. Integração eficiente Flask-SQLite
+2. Integração Flask-SQLite
 3. Padrões web modernos
-4. UX minimalista e funcional
-
-## 🌟 Destaques
-
-✔️ Validação no backend  
-✔️ Persistência local eficaz  
-✔️ Design responsivo  
-✔️ Fácil expansão  
-
-## 📂 Estrutura do Projeto
+4. UX minimalista
